@@ -2,7 +2,6 @@
 import Image from 'next/image';
 import { MailIcon, MapPinIcon, PhoneIcon } from 'lucide-react';
 import CurlyArrow from './components/arrow';
-import CoffeeBeans from './components/coffee-beans';
 import CoffeeBtn from './components/coffeeBtn';
 import Gallery from './components/gallery';
 import ShareBtn from './components/share';
@@ -95,11 +94,11 @@ export default function Home() {
           </div>
         </section>
         <Image
-          src='/bird-globe.svg'
+          src='/images/bird-globe.svg'
           width={600}
           height={300}
-          alt='Flying Ducks'
-          className='rounded-xl md:rounded-3xl px-4 md:size-2/3'
+          alt='Duck flying from South Africa to Sweden'
+          className='rounded-xl md:rounded-3xl px-4 sm:size-2/3'
         />
       </div>
       <div>
@@ -151,7 +150,7 @@ export default function Home() {
             <h1 className='text-4xl md:text-5xl uppercase underline underline-offset-8 lg:text-left'>
               Find us
             </h1>
-            <p className='text-lg md:text-xl pr-6 xl:pr-10 lg:text-left'>
+            <p className='text-lg md:text-xl pr-6 xl:pr-10'>
               We are located in Vallastaden, 15 min away from the city centre.
               Come visit us.
             </p>
@@ -168,7 +167,7 @@ export default function Home() {
             </ul>
           </section>
 
-          <div className='space-y-4 md:w-fit'>
+          <div className='space-y-6 md:w-fit'>
             <h2 className='text-4xl whitespace-nowrap uppercase underline underline-offset-8'>
               Opening Hours
             </h2>
