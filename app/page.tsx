@@ -12,24 +12,21 @@ export default function Home() {
     {
       icon: <MapPinIcon className='size-6 md:size-7' />,
       text: 'Johannes Magnus väg 26, 583 28 Linköping',
-      link: 'https://www.google.com/maps/dir//Johannes+Magnus+v%C3%A4g+26,+583+28+Link%C3%B6ping/@58.391732,15.4989502,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x46596f5c2f93e589:0xc68481adc53b8d81!2m2!1d15.58135!2d58.3917584?entry=ttu&g_ep=EgoyMDI1MDIxMS4wIKXMDSoASAFQAw%3D%3D',
     },
     {
       icon: <MailIcon className='size-6 md:size-7' />,
       text: 'dolcevita.lkpg@gmail.com',
-      link: 'mailto:dolcevita.lkpg@gmail.com',
     },
     {
       icon: <PhoneIcon className='size-6 md:size-7' />,
       text: '070-910 07 28',
-      link: 'tel:070-910-07-28',
     },
   ];
 
   const openingHours = [
     { day: 'Måndag', hours: '10-17' },
-    { day: 'Tis-Fre', hours: '10-18' },
     { day: 'Lördag', hours: '10-16' },
+    { day: 'Tis-Fre', hours: '10-18' },
     { day: 'Söndag', hours: '11-17' },
   ];
 
@@ -147,48 +144,52 @@ export default function Home() {
       {/* Find Us Section */}
       <div
         id='find-us'
-        className='py-12 sm:max-lg:items-center px-8 sm:px-20 md:px-12 lg:py-20 xl:px-20 border-4 border-primary rounded-3xl flex flex-col lg:flex-row gap-12 sm:gap-8 md:gap-8'
+        className='py-12 lg:py-20 rounded-3xl flex flex-col md:flex-row gap-12 sm:gap-8 md:gap-8'
       >
-        <div className='space-y-5 max-w-lg flex flex-col'>
-          <h1 className='text-4xl md:text-5xl uppercase underline underline-offset-8 sm:max-lg:text-center'>
-            Find us
-          </h1>
-          <p className='text-lg md:text-xl xl:pr-10 sm:max-lg:text-center'>
-            We are located in Vallastaden, 15 min away from the city centre.
-            Come visit us.
-          </p>
-          <ul className='space-y-4 overflow-visible sm:max-lg:pl-28 sm:max-lg:pt-4'>
-            {contacts.map((contact, index) => (
-              <a
-                href={contact.link}
-                key={index}
-                className='flex flex-col gap-2'
-              >
-                <li className='flex gap-4 text-lg md:text-xl items-center'>
+        <div className='space-y-10 max-w-lg flex flex-col'>
+          <section className='flex flex-col gap-4'>
+            <h1 className='text-4xl md:text-5xl uppercase underline underline-offset-8 lg:text-left'>
+              Find us
+            </h1>
+            <p className='text-lg md:text-xl pr-6 xl:pr-10 lg:text-left'>
+              We are located in Vallastaden, 15 min away from the city centre.
+              Come visit us.
+            </p>
+            <ul className='space-y-4'>
+              {contacts.map((contact, index) => (
+                <li
+                  key={index}
+                  className='flex gap-4 text-lg md:text-xl items-center'
+                >
                   {contact.icon}
                   <p className='w-2/3 lg:w-full'>{contact.text}</p>
                 </li>
-              </a>
-            ))}
-          </ul>
+              ))}
+            </ul>
+          </section>
+
+          <div className='space-y-4 md:w-fit'>
+            <h2 className='text-4xl whitespace-nowrap uppercase underline underline-offset-8'>
+              Opening Hours
+            </h2>
+            <ul className='grid grid-cols-1 sm:grid-cols-2 gap-4 text-2xl'>
+              {openingHours.map((item, index) => (
+                <li key={index} className='flex gap-2 justify-between pr-4'>
+                  <h1>{item.day}:</h1>
+                  <h1>{item.hours}</h1>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
-        <CoffeeBeans />
-        <div className='space-y-6'>
-          <h2 className='text-4xl whitespace-nowrap uppercase underline underline-offset-8'>
-            Opening Hours
-          </h2>
-          <ul className='space-y-4'>
-            {openingHours.map((item, index) => (
-              <li
-                key={index}
-                className='flex justify-between text-2xl md:text-3xl'
-              >
-                <h1>{item.day}:</h1>
-                <h1>{item.hours}</h1>
-              </li>
-            ))}
-          </ul>
-        </div>
+
+        <iframe
+          src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d730.9888491835553!2d15.580188256224362!3d58.39180391411697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46596f5c2f93e589%3A0xc68481adc53b8d81!2sDolce%20Vita%20Fika!5e0!3m2!1ssv!2sse!4v1739519990770!5m2!1ssv!2sse'
+          width='600'
+          height='450'
+          loading='lazy'
+          className='rounded-2xl h-72 w-full md:h-full lg:w-[600px] border-2 md:border-4 border-primary'
+        ></iframe>
       </div>
     </div>
   );
