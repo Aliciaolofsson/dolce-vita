@@ -18,7 +18,7 @@ const imgUrl = [
 export default function Gallery() {
   return (
     <div>
-      <div className='grid gap-8 grid-cols-1 sm:grid-cols-3 pt-10'>
+      <div className='grid gap-8 grid-cols-1 sm:grid-cols-3 pt-6'>
         {imgUrl.map((img, index) => (
           <Image
             key={index}

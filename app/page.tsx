@@ -23,15 +23,18 @@ export default function Home() {
   ];
 
   const openingHours = [
-    { day: 'Måndag', hours: '10-17' },
-    { day: 'Lördag', hours: '10-16' },
-    { day: 'Tis-Fre', hours: '10-18' },
-    { day: 'Söndag', hours: '11-17' },
+    { day: 'Monday', hours: '10-17' },
+    { day: 'Saturday', hours: '10-16' },
+    { day: 'Tue-Fri', hours: '10-18' },
+    { day: 'Sunday', hours: '11-17' },
   ];
 
   return (
     <div className='flex flex-col px-8 pt-20 shadow-md xl:shadow-none gap-2 xl:pt-0 md:px-10 xl:px-32 md:gap-16 text-primary'>
-      <div className='flex flex-col md:flex-row gap-10 xl:gap-20 pt-4 justify-between'>
+      <div
+        id='top'
+        className='flex flex-col md:flex-row gap-10 xl:gap-20 pt-4 justify-between'
+      >
         <section className='flex flex-col text-primary gap-6 justify-end'>
           <Image
             src={'/images/duck.svg'}
@@ -111,14 +114,15 @@ export default function Home() {
         />
       </div>
       <div id='menu' className='flex flex-col items-center gap-4 rounded-2xl'>
-        <div className='flex flex-col items-center gap-4 px-4 py-4'>
-          <h4 className='text-4xl md:text-5xl uppercase underline underline-offset-8'>
+        <div className='flex flex-col items-center gap-2 px-4 py-4'>
+          <h4 className='text-4xl md:text-5xl uppercase underline underline-offset-8 mb-2'>
             Menu
           </h4>
           <h5 className='text-lg md:text-2xl md:w-2/3 text-center'>
             We serve speciality coffee, handcrafted cakes and pastries,
-            breakfast, lunch and homemade gelato.{' '}
+            breakfast, lunch and homemade gelato.
           </h5>
+          <p>(We also offer take-away.)</p>
         </div>
         <div className='w-full border-primary border-2 rounded-2xl p-4'>
           <Image
@@ -129,8 +133,8 @@ export default function Home() {
             className='rounded-3xl'
           />
         </div>
-        <div className='py-2 md:py-6 flex items-center flex-col gap-4 md:gap-6'>
-          <h1 className='text-lg md:text-3xl'>
+        <div className='py-2 md:py-6 flex items-center flex-col gap-4'>
+          <h1 className='text-lg md:text-2xl'>
             Planning a visit? Send the menu to a friend!
           </h1>
           <ShareBtn />
@@ -167,8 +171,8 @@ export default function Home() {
             </ul>
           </section>
 
-          <div className='space-y-6 md:w-fit'>
-            <h2 className='text-4xl whitespace-nowrap uppercase underline underline-offset-8'>
+          <div className='space-y-6 md:w-fit uppercase'>
+            <h2 className='text-4xl whitespace-nowrap underline underline-offset-8'>
               Opening Hours
             </h2>
             <ul className='grid grid-cols-1 sm:grid-cols-2 gap-4 text-2xl'>
@@ -179,6 +183,15 @@ export default function Home() {
                 </li>
               ))}
             </ul>
+          </div>
+          <div className='text-lg'>
+            <h3>
+              Please note,
+              <span className='block'>
+                Dogs are not allowed inside, and seating is limited.
+              </span>
+            </h3>
+            <h3></h3>
           </div>
         </div>
 

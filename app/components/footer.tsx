@@ -14,7 +14,6 @@ export default function Footer() {
           className='px-5 md:px-0'
         />
       </Link>
-
       <div className='flex items-center gap-2 md:gap-4'>
         <p className='relative top-1 md:text-xl whitespace-nowrap'>
           © Dolce Vita 2025

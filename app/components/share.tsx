@@ -10,7 +10,7 @@ export default function ShareBtn() {
         className='block'
       >
         <div className='flex items-center py-1 px-10 gap-2'>
-          <h1 className='relative capitalize text-primary top-1 text-2xl'>
+          <h1 className='relative capitalize text-primary top-1 text-xl'>
             Share
           </h1>
           <svg
