@@ -56,8 +56,8 @@ export default function Home() {
           src={'/images/dolce-vita-hero.png'}
           className='rounded-3xl sm:w-full md:w-1/2 xl:h-full'
           alt={'entrance to Dolce Vita'}
-          width={500}
-          height={600}
+          width={540}
+          height={515}
         />
       </div>
       <div
