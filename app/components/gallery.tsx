@@ -24,8 +24,8 @@ export default function Gallery() {
             key={index}
             src={img.src}
             alt={img.alt}
-            width={500}
-            height={600}
+            width={300}
+            height={400}
             className='h-full w-full'
           />
         ))}

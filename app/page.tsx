@@ -49,15 +49,15 @@ export default function Home() {
             <span>Possibly</span> <span className='block'>the Best</span>
             <span className='block'>Fika in Town</span>
           </h2>
-          <CurlyArrow className='absolute md:left-[18rem] lg:left-[23rem] xl:left-[30rem] lg:top-[30rem]  xl:top-[32rem] hidden md:block ' />
+          <CurlyArrow className='absolute md:left-[18rem] lg:left-[23rem] xl:left-[28rem] lg:top-[30rem]  xl:top-[35.5rem] hidden md:block ' />
           <CoffeeBtn />
         </section>
         <Image
-          src={'/dolce-vita-hero.png'}
+          src={'/images/dolce-vita-hero.png'}
           className='rounded-3xl sm:w-full md:w-1/2 xl:h-full'
           alt={'entrance to Dolce Vita'}
-          width={600}
-          height={500}
+          width={500}
+          height={600}
         />
       </div>
       <div
@@ -98,18 +98,18 @@ export default function Home() {
         </section>
         <Image
           src='/images/bird-globe.svg'
-          width={600}
-          height={300}
+          width={400}
+          height={500}
           alt='Duck flying from South Africa to Sweden'
           className='rounded-xl md:rounded-3xl px-4 sm:size-2/3'
         />
       </div>
       <div>
         <Image
-          src='/coffee-machine.png'
+          src='/images/coffee-machine.png'
           alt='Coffee Machine'
-          width={2048}
-          height={839}
+          width={1200}
+          height={500}
           className='rounded-2xl'
         />
       </div>
@@ -145,12 +145,9 @@ export default function Home() {
       </section>
 
       {/* Find Us Section */}
-      <div
-        id='find-us'
-        className='py-12 lg:py-20 rounded-3xl flex flex-col md:flex-row gap-12 sm:gap-8 md:gap-8'
-      >
+      <div className='py-12 lg:py-20 rounded-3xl flex flex-col md:flex-row gap-12 sm:gap-8 md:gap-8'>
         <div className='space-y-10 max-w-lg flex flex-col'>
-          <section className='flex flex-col gap-4'>
+          <section id='find-us' className='flex flex-col gap-4'>
             <h1 className='text-4xl md:text-5xl uppercase underline underline-offset-8 lg:text-left'>
               Find us
             </h1>
@@ -197,8 +194,8 @@ export default function Home() {
 
         <iframe
           src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d730.9888491835553!2d15.580188256224362!3d58.39180391411697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46596f5c2f93e589%3A0xc68481adc53b8d81!2sDolce%20Vita%20Fika!5e0!3m2!1ssv!2sse!4v1739519990770!5m2!1ssv!2sse'
-          width='600'
-          height='450'
+          width='300'
+          height='350'
           loading='lazy'
           className='rounded-2xl h-72 w-full md:h-full lg:w-[600px] border-2 md:border-4 border-primary'
         ></iframe>

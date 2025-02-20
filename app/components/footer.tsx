@@ -4,12 +4,12 @@ import Link from 'next/link';
 
 export default function Footer() {
   return (
-    <div className='flex flex-col items-center gap-4 pt-8 md:pt-8 pb-10 md:pb-5'>
+    <div className='flex flex-col items-center gap-4 pt-8 md:pt-8 pb-10 md:pb-10'>
       <Link href='/' className='mb-2'>
         <Image
           src='/images/logo.svg'
-          width={200}
-          height={200}
+          width={150}
+          height={180}
           alt='Dolce Vita logo'
           className='px-5 md:px-0'
         />

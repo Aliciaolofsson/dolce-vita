@@ -39,7 +39,7 @@ const navbarItems = [
 
 export default function Navbar() {
   return (
-    <nav className='fixed z-50 bg-white xl:static text-primary flex justify-between uppercase items-center md:px-10 xl:px-32 px-8 py-10 text-lg w-full'>
+    <nav className='fixed z-50 bg-white md:static text-primary flex justify-between uppercase items-center md:px-10 xl:px-32 px-8 py-10 text-lg w-full'>
       <Link href='/' className='tracking-[0.2rem] text-2xl md:text-2xl'>
         Dolce Vita
       </Link>
