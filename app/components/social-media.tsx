@@ -7,6 +7,7 @@ export default function SocialMedia({
     <div className='flex w-fit items-center justify-center gap-2 relative top-[0.4rem]'>
       <a
         href='https://www.facebook.com/dolcevitafika/'
+        target='_blank'
         className='hover:text-secondary transition-color duration-200 ease-in-out'
       >
         <svg
@@ -24,6 +25,7 @@ export default function SocialMedia({
       </a>
       <a
         href='https://www.instagram.com/dolce_vita_linkoping?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=='
+        target='_blank'
         className='hover:text-secondary transition-color duration-200 transform'
       >
         <svg
