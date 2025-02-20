@@ -1,14 +1,26 @@
 import React from 'react';
 
 export default function ShareBtn() {
+  const handleShare = async (e: React.MouseEvent) => {
+    e.preventDefault();
+
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: 'Dolce Vita Menu',
+          text: 'Check out the menu for Dolce Vita!',
+          url: '/menu-dolce-vita.pdf',
+        });
+      } catch (error) {
+        console.error('Error sharing:', error);
+      }
+    } else {
+      window.open('/menu-dolce-vita.pdf', '_blank', 'noopener,noreferrer');
+    }
+  };
   return (
     <div className='w-fit group rounded-lg border-2 md:border-[0.2rem] border-primary'>
-      <a
-        href='/menu-dolce-vita.pdf'
-        target='_blank'
-        rel='noopener noreferrer'
-        className='block'
-      >
+      <button className='block' onClick={handleShare}>
         <div className='flex items-center py-1 px-10 gap-2'>
           <h1 className='relative capitalize text-primary top-1 text-xl'>
             Share
@@ -31,7 +43,7 @@ export default function ShareBtn() {
             />
           </svg>
         </div>
-      </a>
+      </button>
     </div>
   );
 }
