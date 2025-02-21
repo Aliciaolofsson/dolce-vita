@@ -47,7 +47,7 @@ export default function Home() {
           <h1 className='text-3xl'>Welcome to Dolce Vita</h1>
           <h2 className='text-6xl text-primary uppercase lg:text-[5.5rem] md:leading-[4rem] lg:leading-[6rem] font-bold space-y-4 whitespace-nowrap'>
             <span>Possibly</span> <span className='block'>the Best</span>
-            <span className='block'>Fika in Town</span>
+            <span className='block'>Café in Town</span>
           </h2>
           <CurlyArrow className='absolute md:left-[18rem] lg:left-[23rem] xl:left-[28rem] lg:top-[30rem]  xl:top-[35.5rem] hidden md:block ' />
           <CoffeeBtn />
@@ -134,6 +134,11 @@ export default function Home() {
           />
         </div>
         <div className='py-2 md:py-6 flex items-center flex-col gap-4'>
+          <div>
+            <h3 className='text-xl uppercase'>
+              Please note, No dogs allowed inside. Seating is limited
+            </h3>
+          </div>
           <h1 className='text-lg md:text-2xl'>
             Planning a visit? Send the menu to a friend!
           </h1>
@@ -180,15 +185,6 @@ export default function Home() {
                 </li>
               ))}
             </ul>
-          </div>
-          <div className='text-lg'>
-            <h3>
-              Please note,
-              <span className='block'>
-                Dogs are not allowed inside, and seating is limited.
-              </span>
-            </h3>
-            <h3></h3>
           </div>
         </div>
 
