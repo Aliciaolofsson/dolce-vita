@@ -11,12 +11,12 @@ export const metadata: Metadata = {
     icon: '/favicon.svg',
   },
   keywords:
-    'Dolce Vita, fika, coffee, pastries, Sweden, Linköping, kaffe, bakverk, espresso, cappuccino, latte, mysigt, café, gelato, kvalité, Desmond Del Frate, vallastaden, lunch, frukost, brunch, kaka, soppa, sandwich, toast, macka, smörgås, hemmagjord glass, kvalitet kaffe, local cafe, lokalt, äta, luncha, varm choklad, matcha latte, chai latte',
+    'Bästa caféet i Linköping, Café i Linköping, Fika i Linköping, Kaffe i Linköping, Bakverk i Linköping, Espresso i Linköping, Cappuccino i Linköping, Latte i Linköping, Mysigt café, Gelato i Linköping, Kvalitetskaffe, Vallastaden café, Lunch i Linköping, Frukost i Linköping, Brunch i Linköping, Hemmagjord glass, Varm choklad i Linköping, Matcha latte i Linköping, Chai latte i Linköping. Best café in Linköping, Café in Linköping, Fika in Linköping, Coffee in Linköping, Pastries in Linköping, Espresso in Linköping, Cappuccino in Linköping, Latte in Linköping, Cozy café, Gelato in Linköping, Quality coffee, Vallastaden café, Lunch in Linköping, Breakfast in Linköping, Brunch in Linköping, Homemade ice cream, Hot chocolate in Linköping, Matcha latte in Linköping, Chai latte in Linköping',
   openGraph: {
     type: 'website',
     url: 'https://www.dolcevitaCafe.se',
     title: 'Dolce Vita',
-    description: 'Dolce Vita Café is located in Linköping, Sweden',
+    description: 'Dolce Vita Café, the best café in Linköping',
     images: [
       {
         url: '/images/dolce-vita-hero.png',
