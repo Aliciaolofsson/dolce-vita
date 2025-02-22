@@ -2,7 +2,7 @@ export default function CurlyArrow({ className = '' }: { className?: string }) {
   return (
     <div className={className}>
       <svg
-        className='size-32 md:size-24 lg:size-full'
+        className='size-32 md:size-24 lg:size-36'
         width='112'
         height='141'
         viewBox='0 0 112 141'

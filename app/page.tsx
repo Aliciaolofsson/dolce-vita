@@ -31,17 +31,14 @@ export default function Home() {
 
   return (
     <div className='flex flex-col px-8 pt-20 shadow-md xl:shadow-none gap-2 xl:pt-0 md:px-10 xl:px-32 md:gap-16 text-primary'>
-      <div
-        id='top'
-        className='flex flex-col md:flex-row gap-10 xl:gap-20 pt-4 justify-between'
-      >
+      <div id='top' className='flex flex-col gap-10 md:gap-0 md:flex-row pt-4'>
         <section className='flex flex-col text-primary gap-6 justify-end'>
           <Image
             src={'/images/duck.svg'}
             width={60}
             height={50}
             alt={'duck vector'}
-            className='w-16 xl:size-20'
+            className='w-16 xl:size-20 justify-self-end'
           />
 
           <h1 className='text-3xl'>Welcome to Dolce Vita</h1>
@@ -49,12 +46,12 @@ export default function Home() {
             <span>Possibly</span> <span className='block'>the Best</span>
             <span className='block'>Café in Town</span>
           </h2>
-          <CurlyArrow className='absolute md:left-[18rem] lg:left-[23rem] xl:left-[28rem] lg:top-[30rem]  xl:top-[35.5rem] hidden md:block ' />
           <CoffeeBtn />
         </section>
+        <CurlyArrow className='relative self-end right-10 bottom-3 hidden md:block' />
         <Image
           src={'/images/dolce-vita-hero.png'}
-          className='rounded-3xl sm:w-full md:w-1/2 xl:h-full'
+          className='rounded-3xl sm:w-full md:w-1/2 xl:h-full xl:w-full'
           alt={'entrance to Dolce Vita'}
           width={540}
           height={515}
@@ -122,7 +119,7 @@ export default function Home() {
             We serve speciality coffee, handcrafted cakes and pastries,
             breakfast, lunch and homemade gelato.
           </h5>
-          <p>(We also offer take-away.)</p>
+          <h3 className='text-xl'>(All items are available to take-away.)</h3>
         </div>
         <div className='w-full border-primary border-2 rounded-2xl p-4'>
           <Image
@@ -136,7 +133,7 @@ export default function Home() {
         <div className='py-2 md:py-6 flex items-center flex-col gap-4'>
           <div>
             <h3 className='text-xl uppercase'>
-              Please note, No dogs allowed inside. Seating is limited
+              Please note. No dogs allowed inside. Seating is limited.
             </h3>
           </div>
           <h1 className='text-lg md:text-2xl'>
