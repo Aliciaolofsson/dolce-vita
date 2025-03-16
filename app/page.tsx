@@ -41,7 +41,7 @@ export default function Home() {
             className='w-16 xl:size-20 justify-self-end'
           />
 
-          <h1 className='text-3xl'>Welcome to Dolce Vita</h1>
+          <h1 className='text-3xl xl:text-4xl'>Welcome to Dolce Vita</h1>
           <h2 className='text-6xl text-primary uppercase lg:text-[5.5rem] md:leading-[4rem] lg:leading-[6rem] font-bold space-y-4 whitespace-nowrap'>
             <span>Possibly</span> <span className='block'>the Best</span>
             <span className='block'>Café in Town</span>
@@ -51,7 +51,7 @@ export default function Home() {
         <CurlyArrow className='relative self-end right-10 bottom-3 hidden md:block' />
         <Image
           src={'/images/dolce-vita-hero.png'}
-          className='rounded-3xl sm:w-full md:w-1/2 xl:h-full xl:w-full'
+          className='rounded-3xl sm:w-full md:w-1/2 xl:w-full'
           alt={'entrance to Dolce Vita'}
           width={540}
           height={515}
@@ -107,7 +107,7 @@ export default function Home() {
           alt='Coffee Machine'
           width={1200}
           height={500}
-          className='rounded-2xl'
+          className='rounded-2xl w-full'
         />
       </div>
       <div id='menu' className='flex flex-col items-center gap-4 rounded-2xl'>
@@ -127,7 +127,7 @@ export default function Home() {
             alt='Menu Preview'
             width={1200}
             height={800}
-            className='rounded-3xl'
+            className='rounded-3xl w-full'
           />
         </div>
         <div className='py-2 md:py-6 flex items-center flex-col gap-4'>
@@ -190,7 +190,7 @@ export default function Home() {
           width='300'
           height='350'
           loading='lazy'
-          className='rounded-2xl h-72 w-full md:h-full lg:w-[600px] border-2 md:border-4 border-primary'
+          className='rounded-2xl h-72 w-full md:h-full xl:full border-2 md:border-4 border-primary self-end '
         ></iframe>
       </div>
     </div>
