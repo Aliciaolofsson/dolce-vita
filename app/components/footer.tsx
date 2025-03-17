@@ -20,7 +20,7 @@ export default function Footer() {
         </p>
         <div className='h-4 w-[1.5px] bg-primary relative top-[4px] md:top-[1px]' />
         <a
-          href='https://www.aliciaolofsson.com/tjänster'
+          href='https://www.aliciaolofsson.com'
           className='relative top-1 md:text-xl whitespace-nowrap'
         >
           <p>
