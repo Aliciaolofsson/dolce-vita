@@ -39,6 +39,7 @@ export default function Home() {
             height={50}
             alt={'duck vector'}
             className='w-16 xl:size-20 justify-self-end'
+            priority
           />
 
           <h1 className='text-3xl xl:text-4xl'>Welcome to Dolce Vita</h1>
@@ -55,6 +56,7 @@ export default function Home() {
           alt={'entrance to Dolce Vita'}
           width={540}
           height={515}
+          priority
         />
       </div>
       <div
@@ -99,6 +101,7 @@ export default function Home() {
           height={500}
           alt='Duck flying from South Africa to Sweden'
           className='rounded-xl md:rounded-3xl px-4 sm:size-2/3'
+          loading='lazy'
         />
       </div>
       <div>
@@ -108,6 +111,7 @@ export default function Home() {
           width={1200}
           height={500}
           className='rounded-2xl w-full'
+          loading='lazy'
         />
       </div>
       <div id='menu' className='flex flex-col items-center gap-4 rounded-2xl'>
@@ -128,6 +132,7 @@ export default function Home() {
             width={1200}
             height={800}
             className='rounded-3xl w-full'
+            loading='lazy'
           />
         </div>
         <div className='py-2 md:py-6 flex items-center flex-col gap-4'>

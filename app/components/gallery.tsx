@@ -27,6 +27,7 @@ export default function Gallery() {
             width={300}
             height={400}
             className='h-full w-full'
+            loading='lazy'
           />
         ))}
       </div>
