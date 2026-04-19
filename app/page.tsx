@@ -23,10 +23,9 @@ export default function Home() {
   ];
 
   const openingHours = [
-    { day: 'Monday', hours: '10-17' },
-    { day: 'Saturday', hours: '10-16' },
-    { day: 'Tue-Fri', hours: '10-18' },
-    { day: 'Sunday', hours: '11-17' },
+    { day: 'Mon-Fri', hours: '11-17' },
+    { day: 'Saturday', hours: '10-15' },
+    { day: 'Sunday', hours: '11-16' },
   ];
 
   return (
@@ -179,7 +178,7 @@ export default function Home() {
             <h2 className='text-4xl whitespace-nowrap underline underline-offset-8'>
               Opening Hours
             </h2>
-            <ul className='grid grid-cols-1 sm:grid-cols-2 gap-4 text-2xl'>
+            <ul className='grid grid-cols-1 gap-2 text-2xl'>
               {openingHours.map((item, index) => (
                 <li key={index} className='flex gap-2 justify-between pr-4'>
                   <h1>{item.day}:</h1>
