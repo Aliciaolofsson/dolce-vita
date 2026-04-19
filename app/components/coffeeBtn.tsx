@@ -2,7 +2,7 @@ export default function CoffeeBtn() {
   return (
     <div className='bg-primary w-fit group rounded-lg md:rounded-xl hover:bg-primary-foreground transition-colors duration-300'>
       <a href='#find-us' className='block'>
-        <div className='flex py-3 px-16 whitespace-nowrap md:px-10 md:py-3 lg:px-12 gap-4 items-center'>
+        <div className='flex py-2 px-16 w-full whitespace-nowrap md:px-10 md:py-3 lg:px-12 gap-4 items-center'>
           <h1 className='relative text-white tracking-wide top-1 text-2xl'>
             Visit Us
           </h1>

@@ -42,7 +42,7 @@ export default function Home() {
           />
 
           <h1 className='text-3xl xl:text-4xl'>Welcome to Dolce Vita</h1>
-          <h2 className='text-6xl text-primary uppercase lg:text-[5.5rem] md:leading-[4rem] lg:leading-[6rem] font-bold space-y-4 whitespace-nowrap'>
+          <h2 className='text-5xl text-primary uppercase lg:text-[5.5rem] md:leading-[4rem] lg:leading-[6rem] font-bold space-y-4 whitespace-nowrap'>
             <span>Possibly</span> <span className='block'>the Best</span>
             <span className='block'>Café in Town</span>
           </h2>
